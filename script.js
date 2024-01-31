@@ -4,6 +4,7 @@ const containerElement = document.querySelector(".container")
 for(i = 1; i <= 100; i++){
     // creates the html element that will contain our info
     const newElement = document.createElement("div");
+    newElement.className = "box";
 
     // logs fizzbuzz if divisible by BOTH 3 and 5
     // and changes the value of newElement with the same info
