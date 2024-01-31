@@ -11,14 +11,17 @@ for(i = 1; i <= 100; i++){
     if(i % 3 == 0 && i % 5 == 0){
         console.log("FizzBuzz");
         newElement.innerHTML = "FizzBuzz";
+        newElement.classList.add('fizz', 'buzz')
     // then logs fizz if divisible by 3
     } else if(i % 3 == 0){
         console.log("Fizz")
         newElement.innerHTML = "Fizz";
+        newElement.classList.add('fizz')
     // then logs buzz if divisible by 5
     } else if(i % 5 == 0){
         console.log("Buzz");
         newElement.innerHTML = "Buzz";
+        newElement.classList.add('buzz')
     } else{
         console.log(i);
         newElement.innerHTML = i;
